@@ -6,6 +6,7 @@ function toggleMenu() {
 /* THEME */
 const body = document.body;
 const icon = document.getElementById("theme-icon");
+localStorage.setItem("theme", "dark");
 
 if (localStorage.getItem("theme") === "dark") {
     body.classList.add("dark");
