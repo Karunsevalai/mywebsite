@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mysqft - Digital Growth</title>
+    <title>Mysqft - Digital Growth</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="logo.png.png">
 </head>
-<body>
+<body class="dark">
 
 <!-- MATRIX CANVAS BACKGROUND -->
 <!-- <canvas id="matrix"></canvas> -->
 
 <!-- HEADER -->
 <header>
-    <div class="logo">mysqft</div>
+    <div class="logo"  onclick="toggleTheme()" >Mysqft</div>
 
-    <nav>
+    <nav onclick="toggleMenu()">
         <a href="#home"><span>Home</span></a>
         <a href="#services"><span>Services</span></a>
         <a href="#about"><span>About Us</span></a>
@@ -33,10 +34,21 @@
 <!-- HERO -->
 <section id="home" class="section hero">
     <div class="hero-content animate-up">
-        <h1>Advanced Lead Generation For Real Estate</h1>
-        <p>We build high-conversion landing pages and provide expert digital marketing guidance to accelerate property sales.</p>
+        <h1>Never Miss a Lead Again</h1>
+        <p>In normal instant forms or other lead generation methods, it’s hard to retain clients. With our service, we provide you a separate domain with GPS-based site location at no cost. You only need to maintain one of our services. Whenever a customer visits your site or shows interest, you’ll receive instant notifications.</p>
+
+        <div class="features">
+            <p>⚡ Instant Notifications</p>
+            <p>📧 Daily CSV Reports</p>
+            <p>🔒 Secure & Spam Protected</p>
+            <p>🧩 Easy Integration</p>
+        </div><br>
         <a href="#services" class="btn">Explore Services</a>
+        <a href="https://chennai.mysqft.in" class="btn dbtn">Demo Lead Form</a>
+        <br>
+
     </div>
+
 </section>
 
 <!-- SERVICES -->
@@ -45,21 +57,33 @@
 
     <div class="services-grid">
         <div class="card animate-up">
-            <h3>Email Only</h3>
-            <p>Simple email capture system for reliable prospects.</p>
-            <h2 class="price">₹2000</h2>
+         <h3>Discord Notifications</h3>
+          <p class="price">₹2,000 / month</p> 
+          <ul style="list-style: none;">
+            <li><span>✔</span>Instant Discord alerts</li>
+            <li><span>✔</span>Real-time delivery</li>
+            <li><span>✔</span>Structured messages</li>
+          </ul>
         </div>
 
         <div class="card animate-up">
-            <h3>Email + Discord</h3>
-            <p>Boost engagement by collecting email + discord join.</p>
-            <h2 class="price">₹2500</h2>
+          <h3>Daily Email Reports</h3>
+          <p class="price">₹2,000 / month</p>
+          <ul>
+            <li><span>✔</span>Daily CSV report</li>
+            <li><span>✔</span>Clean lead data</li>
+            <li><span>✔</span>Automatic cleanup</li>
+          </ul>
         </div>
 
         <div class="card animate-up">
-            <h3>Email + OTP Verify</h3>
-            <p>High-quality verified leads with OTP authentication.</p>
-            <h2 class="price">₹3000</h2>
+           <h3>Discord + Email</h3>
+           <p class="price">₹3,000 / month</p>
+           <ul>
+             <li><span>✔</span>Discord alerts</li>
+             <li><span>✔</span>Daily CSV email</li>
+             <li><span>✔</span>Priority support</li>
+           </ul>
         </div>
     </div>
 </section>
@@ -67,33 +91,51 @@
 <!-- ABOUT -->
 <section id="about" class="section">
     <h2 class="section-title animate-fade">About Us</h2>
-
     <div class="about-box animate-up">
-        mysqft provides specialized digital solutions for real estate. We build conversion-focused landing pages under our subdomains and offer data-backed marketing guidance to increase lead quality and ROI.
+    <h2>Who we are</h2><br>
+
+        <p>MySqft is a simple and reliable lead-management service built for  businesses that want speed, clarity, and zero complexity.</p>
+    </div><br>
+    <div class="about-box animate-up">
+    <h2>Our Mission</h2><br>
+
+        <p>Turning every lead into an opportunity.</p>
     </div>
 </section>
 
 <!-- CAREER -->
 <section id="career" class="section">
     <h2 class="section-title animate-fade">Career</h2>
-
     <div class="about-box animate-up">
-        Want to work with us?  
-        Send your resume to:  
-        <strong>career@mysqft.com</strong>
+       <h3>Join Our Team</h3><br>
+        <p>We’re building a fast, reliable SaaS platform and looking for passionate people.</p>
+    </div>
+    <br>
+        <div class="about-box animate-up">
+       <h3>Positions</h3>
+       <ul>
+        <li>Backend Developer (Python / Flask)</li>
+        <li>Frontend Developer (React / Next.js)</li>
+        <li>DevOps Engineer</li>
+        <li>Customer Success Manager</li>
+       </ul>
+
     </div>
 </section>
 
-<!-- CONTACT -->
+<!-- CONT
+ ACT -->
 <section id="contact" class="section">
     <h2 class="section-title animate-fade">Contact Us</h2>
 
-    <form class="contact-form animate-up">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
+ <form class="contact-form animate-up" method="POST" action="">
+    <input type="text" name="name" placeholder="Name" maxlength="30" required>
+    <input type="email" name="email" placeholder="Email" maxlength="50" required>
+    <input type="text" name="phone" placeholder="Phone Number" pattern="[6789]{1}[0-9]{9}" required>
+    <textarea name="message" placeholder="Your Message" maxlength="300" required></textarea>
+    <button type="submit">Send Message</button>
+ </form>
+
 </section>
 
 <footer>

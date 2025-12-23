@@ -109,6 +109,7 @@ nav a:hover span::after {
 .hero {
     display: flex;
     align-items: center;
+    
 }
 
 .hero-content h1 {
@@ -119,7 +120,7 @@ nav a:hover span::after {
 .hero-content p {
     font-size: 20px;
     margin-bottom: 25px;
-    max-width: 600px;
+    max-width: 900px;
 }
 
 .btn {
@@ -254,4 +255,188 @@ footer {
     nav.show { display: flex; }
 
     .menu-toggle { display: block; }
+}
+
+
+ul{
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    margin-top:20px;
+}
+li>span{
+    color:#39ff93;
+    padding-right:10px;
+}
+
+p{
+    line-height:1.6;
+}
+
+.dbtn{
+    background-color:blue;
+    color:white;
+    margin-left:10px;
+}
+
+
+
+
+/* =========================
+   RESPONSIVE TYPOGRAPHY
+========================= */
+html {
+    font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+/* =========================
+   SECTION SPACING
+========================= */
+@media (max-width: 768px) {
+    .section {
+        padding: 100px 20px 40px;
+        min-height: auto;
+    }
+}
+
+/* =========================
+   HEADER & NAV
+========================= */
+@media (max-width: 768px) {
+    header {
+        padding: 0 20px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 8px 0;
+    }
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+@media (max-width: 768px) {
+    .hero {
+        align-items: flex-start;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .features p {
+        font-size: 15px;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-bottom: 10px;
+        padding: 12px 18px;
+        font-size: 14px;
+    }
+
+    .dbtn {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 26px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+}
+
+/* =========================
+   SERVICES CARDS
+========================= */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .price {
+        font-size: 22px;
+    }
+
+    .card h3 {
+        font-size: 18px;
+    }
+}
+
+/* =========================
+   ABOUT / CAREER BOX
+========================= */
+@media (max-width: 768px) {
+    .about-box {
+        padding: 20px;
+        font-size: 15px;
+    }
+}
+
+/* =========================
+   CONTACT FORM
+========================= */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 20px;
+        gap: 14px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .contact-form button {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+/* =========================
+   FOOTER
+========================= */
+@media (max-width: 480px) {
+    footer {
+        font-size: 13px;
+        padding: 15px;
+    }
 }
